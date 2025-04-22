@@ -1,6 +1,9 @@
 # project-web-samlip 2025/4 ~ing
 ## 삼립 프로젝트 파일/폴더 구성
+* `./styles/common.css` header, footer 공통 CSS
 * `./index.html` 첫번째 메인 HTML -`./image/*`,`./styles/index.css`,`./styles/reset.css`
+* `./compant.html` COMPANY 경영이념 - `./images/company/*`, `./styles/company.css` 
+* `common` 공통으로 들어가는 header, footer의 css파일
 ## 프로젝트 폴더 생성 후 작업해야하는 것
 * 프로젝트 폴더 생성 후 vs code 연결 후 git 저장소 등록
 * gitHub 저장소 생성하고 위 폴더로 연결
