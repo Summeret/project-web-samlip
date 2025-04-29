@@ -1,0 +1,44 @@
+/* sns.css */
+#wrap {
+    text-align:center;
+}
+#wrap .path {
+    background-color:aqua;
+    text-align:right;
+    padding:20px 60px 20px 0px;
+}
+#wrap .path a {}
+#wrap .path img {}
+#wrap .path span {}
+#wrap h1 {
+    font-size:3.75rem;
+    font-weight:700;
+    margin:60px 0 15px;
+}
+#wrap p {
+    font-size:1.25rem;
+    margin-bottom:60px;
+}
+/* ======================= */
+#wrap .bg {
+    background-color:coral;
+    margin:0 auto;
+    padding:0 120px;
+}
+#wrap .bg .sns {
+    background-color:aqua;
+    width:1280px; height:300px;
+
+}
+#wrap .bg .sns a {
+    background-color:#f5f5f5;
+    display:inline-block;
+}
+#wrap .bg .sns a h2 {
+    font-size:1.5rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+#wrap .bg .sns a p {
+    font-size:0.875rem;
+}

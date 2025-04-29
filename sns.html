@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNS | SPC삼립</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard-dynamic-subset.min.css" />
+    <link href="./styles/reset.css" rel="stylesheet">
+    <link href="./styles/common.css" rel="stylesheet">
+    <link href="./styles/sns.css" rel="stylesheet">
+</head>
+<body>
+    <!-- =============== header -->
+    <header>
+        <h1><a href="./index.html"><img src="./images/logo.png" alt="spc삼립"></a></h1>
+        <nav>  <!-- gnb를 묶어주는 대표적인 시멘틱태그 -->
+            <ul class="gnb"> <!-- 서브메뉴가 있는 경우 -->
+                <li><a href="./company.html">COMPANY</a></li>
+                <li><a href="#">BEANDS</a></li>
+                <li><a href="./ir.html">IR</a></li>
+                <li><a href="./sns.html">SNS</a></li>
+                <li><a href="#">RECRIUT</a></li>
+                <li><a href="#">STORE</a></li>
+            </ul>
+        </nav>
+        <ul class="right_menu"> <!-- 서브메뉴가 없다면 div(a-a-a) 로 작성 -->
+            <li><a href="#">CUSTOMER</a></li>
+            <li><a href="#"><img src="./images/icon_lang_kr.png" alt="언어변경"></a></li> <!-- 서브메뉴 있음 -->
+            <li><a href="#"><img src="./images/icon_search.png" alt="검색하기"></a></li>
+        </ul>
+    </header>
+    <!-- =============== main -->
+    <main>
+        <div id="wrap">
+            <div class="path">
+                <a href="./index.html">Home</a>
+                <img src="./images/double_arrow.png">
+                <span>social network</span>
+            </div>
+            <h1>소셜 네트워트</h1>
+            <p>SPC삼립의 다양한 이벤트와 맛있는 이야기</p>
+            <section class="bg">
+                <div class="sns">
+                    <a href="#">
+                        <h2>YouTube</h2>
+                        <p>먹고 보고 소화하는 Samlip Studio</p>
+                    </a>
+                    <a href="#">
+                        <h2>Instargram</h2>
+                        <p>보고, 공유하고, 저장하고 싶은 군침도는 컨텐츠</p>
+                    </a>
+                    <a href="#">
+                        <h2>Facebook</h2>
+                        <p>맛있는 이야기로 하나 되는 소통 플랫폼</p>
+                    </a>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- =============== footer -->
+    <footer class="footer_full_w">
+        <div class="top">
+            <div class="left">
+                <a href="#">개인정보처리방침</a>
+                <a href="#">영상정보처리기기 운영관리방침</a>
+                <a href="#">거래희망회사 사전등록</a>
+                <a href="#">동반성장</a>
+                <a href="#"><img src="./images/ccm.png" alt=""></a>
+            </div>
+            <div class="right">
+                <!-- 서버와 연결된 작업(로그인,회원가입,장바구니,구매하기,회원정보,게시판 등...)이 아닌 단순 수행작업일 경우는 input, button 등의 태그를 작성해도 form 태그를 추가 작성하지 않아도 된다. -->
+                <select NAME="family_site" class="site"> <!-- 공통이름 class로 작성 -->
+                    <option>FAMILY SITES</option>
+                    <option value="http://paris.co.kr">PARIS BAGUETTE</option>
+                    <option value="http://baskinrobbins/co.kr">Baskin Robbins</option>
+                    <option value="http://dunkindonuts.co.kr">dunkin</option>
+                </select>
+                <!-- <div class="family_sites site">
+                    <span>FAMILY SITES</span>
+                    <img src="./images/icon_allow.png" alt="">
+                </div> -->
+                <div class="site_map site">
+                    <span>SITE MAP</span>
+                    <img src="./images/icon_allow.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <address>고객센터 전화번호 080-739-8572 (월~금 09:00~17:00)<br>101,Gondan 1-daero, Siheung-si, Gyeonggi-do, Republic of Korea (주)SPC삼립 대표이사 황종헌</address>
+            <P>&copy; Samlip. All rights reserved.</P>
+        </div>
+    </footer>
+</body>
+</html>
