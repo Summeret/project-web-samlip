@@ -1,1 +1,115 @@
 /* index.css 메인 첫 페이지의 <main> */
+#wrap {}
+/* =============================== 1. 광고배너 */
+#wrap main {}
+#wrap main .ad_wrap {} /* 슬라이드+버튼G */
+/* 공통 선택자 */
+#wrap main .ad_wrap .ad_container {}/* 슬라이드G */
+#wrap main .ad_wrap .ad_container .ad {/* 슬라이드 */
+    display:none;/* 모두숨기기 */
+    height:800px;
+    background-position:center; /* 화면을 줄일 때 사진 중앙 유지 -> 반응형 */
+    position:relative; /* 부모기준으로 위치선정하기 위해 부모 위치 확인 세팅 */
+} 
+#wrap main .ad_wrap .ad_container .ad .ad_txt {
+    width:1280px;/*  margin:0 auto; */ /* position 적용해서 공중으로 뜨는 특징때문에 margin은 적용되지 않는다. */
+    position:absolute; /* 부모를 기준으로 위치선정 */
+    bottom:123px;
+    left:50%; /* 모든 레이아웃은 왼쪽 상단이 기준이라서 화면 중앙이 아닌 중앙을 기준으로 중앙에 배치됨 */
+    transform:translateX(-50%); 
+    /* absolute로 위치 설정 시 요소를 가운데 배치하려면 left:50%와 translate(-50%)를 함께 이용해야 배치할 수 있다. 단, 요소가 absolute가 아닌 평범한 요소라면 가운데 배치 시 margin:0 auto;를 사용하면 된다. */
+}
+#wrap main .ad_wrap .ad_container .ad .ad_txt h2 {
+    font-size:2rem; font-weight:600;
+    line-height:1.5;
+    margin-bottom:23px;
+    color:#fff;
+}
+#wrap main .ad_wrap .ad_container .ad .ad_txt p{
+    line-height:1.6; color:#fff;
+}
+/* 광고 공통 버튼 */
+#wrap main .ad_wrap .ad_btn {
+    text-align:center;
+    padding:34px 0;
+}
+#wrap main .ad_wrap .ad_btn #ad_prev {margin-right:10px;}
+#wrap main .ad_wrap .ad_btn #ad_prev img{}
+#wrap main .ad_wrap .ad_btn #ad_next {transform:scaleX(-1);} /* 반전 */
+#wrap main .ad_wrap .ad_btn #ad_next img {}
+/* ====================   2. 광고 개별 영역 */
+#wrap main .ad_wrap .ad_container .ad1 {
+    display:block;
+    background-image:url(../images/ad_01.jpg);
+}
+#wrap main .ad_wrap .ad_container .ad2 {}
+#wrap main .ad_wrap .ad_container .ad3 {}
+#wrap main .ad_wrap .ad_container .ad4 {}
+#wrap main .ad_wrap .ad_container .ad5 {}
+/* ================================= 2. 뉴스&공지사항 */
+/* 공통 */
+#wrap main .news_all {
+    text-align:center;
+    padding:50px 0;
+}
+#wrap main .news_all h2 {
+    font-size:3rem;
+    font-weight:700;
+    margin:50px 0 20px;
+}
+#wrap main .news_all > P{}
+#wrap main .news_all .news_wrap { /* 보이는 영역 - 보이고 싶은 크기*/
+    width:1370px; overflow:hidden; /* 부모안에서만 보이기 */
+    margin:0 auto; /* 화면보다 블록이 너비가 작을 떄 center 배치 */
+    margin-bottom:20px;
+} 
+#wrap main .news_all .news_wrap .news_container { /* 움직이는 영역 - max-contant */
+    display:flex; flex-flow:row nowrap;
+    width:max-content; /* 부모 영역을 넘어서 움직이는 영역을 잡아줌 */
+    text-align:left;
+    padding:100px 0 50px;
+} 
+#wrap main .news_all .news_wrap .news_container .news {
+    width:311px; height:287px;
+    margin-right:42px;
+    border:1px solid #ccc;
+    position:relative; /* 글자수가 달라도 박스 크기는 동일하게 설정하려면 높이를 고정하고 position 적용하기 */
+}
+#wrap main .news_all .news_wrap .news_container .news:hover {
+    border:1px solid #0000ff;
+}
+#wrap main .news_all .news_wrap .news_container .news a {}
+#wrap main .news_all .news_wrap .news_container .news a p {}
+#wrap main .news_all .news_wrap .news_container .news a p img {}
+#wrap main .news_all .news_wrap .news_container .news a h3 {
+    font-size:1.125rem;
+    font-weight:500;
+    margin:20px 0 40px 20px;
+}
+#wrap main .news_all .news_wrap .news_container .news .date {
+    font-size:0.875rem;
+    position:absolute; /* 그러면 피그마에서 설정한 여백 20px은 작성 X */
+    left:20px; bottom:20px;
+}
+#wrap main .news_all .news_wrap .news_btn {margin-bottom:20px;}
+#wrap main .news_all .news_wrap .news_btn #news_prev {margin-right:10px;}
+#wrap main .news_all .news_wrap .news_btn #news_prev img {}
+#wrap main .news_all .news_wrap .news_btn #news_next {transform:scaleX(-1);}
+#wrap main .news_all .news_wrap .news_btn #news_next img {}
+#wrap main .news_all .all_news {
+    border:1px solid #000;
+    padding:20px 60px;
+    display:inline-block; /* display 중복사용 불가 */
+    /* display:flex; width:max-content; margin:20px auto 50px; */
+}
+#wrap main .news_all .all_news img {
+    margin-right:10px;
+}
+#wrap main .news_all .all_news em {
+    font-size:0.875rem;
+    font-weight:500;
+}
+/* all_news 버튼 hover 효과모음 -> 대상이 다를 때는 각자 작성해주기 */
+#wrap main .news_all .all_news:hover {background-color:#000;}
+#wrap main .news_all .all_news:hover img {filter:invert(100%);} /* 색 반전 */
+#wrap main .news_all .all_news:hover em {color:#fff}
